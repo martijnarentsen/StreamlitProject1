@@ -12,8 +12,12 @@ st.write("Overzicht van de data:")
 st.dataframe(df)
 
 # Groepeer de data per locatie
-verkopen_per_locatie = df.groupby('Locatie')['Verkoop'].sum()
+prijs_per_land = df.groupby('land')['prijs'].sum()
 
 # Maak een eenvoudige staafgrafiek
-st.write("Verkoop per locatie:")
-st.bar_chart(verkopen_per_locatie)
+st.write("prijs per land:")
+st.bar_chart(prijs_per_land)
+
+# Maak een eenvoudige lijngrafiek
+st.write("prijs per land:")
+st.line_chart(prijs_per_land)
