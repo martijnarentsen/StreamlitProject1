@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
+'''
 # Laad de data
 df = pd.read_csv("exclusieve_schoenen_verkoop_met_locatie.csv")
 
@@ -17,3 +17,4 @@ ax.set_ylabel('Aantal verkopen')
 
 st.pyplot(fig)
 
+'''
